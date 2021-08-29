@@ -9,6 +9,7 @@ dashboard_url = 'https://doyourpart.ucmerced.edu/covid-19-statistics'
 data_dir = file.path('..', 'data')
 
 ## GET page ----
+message(dashboard_url)
 page = read_html(dashboard_url)
 
 ## Extract Testing and Positivity table ----
