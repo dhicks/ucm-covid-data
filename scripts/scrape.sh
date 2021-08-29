@@ -6,6 +6,7 @@ if [[ `git status --porcelain` ]]; then
     # Changes
     git add ../data/*
     git commit -m "add new data"
+    git push
     echo "Changes"
     osascript -e 'display notification "Scraped new data from UCM Covid dashboard"' 
 else
