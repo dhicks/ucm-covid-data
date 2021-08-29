@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+scripts/scrape__err.log
+scripts/scrape_out.log
+
