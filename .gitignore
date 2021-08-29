@@ -4,4 +4,5 @@
 .Ruserdata
 scripts/scrape__err.log
 scripts/scrape_out.log
+scripts/launched.ucm.covid.scrape.plist
 
