@@ -1,0 +1,3 @@
+date,category,Total.Unique.Individuals.Tested,Total.Tests,Total.Symptomatic.Positive.Tests,Total.Asymptomatic.Positive.Tests,Total......Positivity.Rate,Weekly.Tests,Weekly.Positivity.Rate,Active.Cases
+2021-08-30,Employees,995,"6,873",58,32,1.31%,132,4.55%,5
+2021-08-30,Students,"5,355","20,296",55,130,0.91%,"2,287",0.48%,7
