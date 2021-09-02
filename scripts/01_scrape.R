@@ -6,7 +6,7 @@ library(assertthat)
 
 dashboard_url = 'https://doyourpart.ucmerced.edu/covid-19-statistics'
 
-data_dir = file.path('..', 'data')
+data_out = file.path('..', 'data_raw')
 
 ## GET page ----
 message(dashboard_url)
