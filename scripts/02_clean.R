@@ -1,5 +1,6 @@
 library(tidyverse)
 library(glue)
+library(assertthat)
 
 data_in = file.path('..', 'data_raw')
 data_out = file.path('..', 'data')
@@ -48,6 +49,13 @@ clean_raw = function(infile) {
             mutate(category = tolower(category)) %>% 
             select(date, category, tests, pos, pos_rate, cases_active, 
                    matches('total'))
+        
+        cleaned %>% 
+            is.na() %>% 
+            any() %>% 
+            magrittr::not() %>% 
+            assert_that(msg = glue('Missing values in {base_name}'))
+        
         write_csv(cleaned, outfile)
     } else {
         message(glue('{base_name} already cleaned'))
