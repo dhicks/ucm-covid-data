@@ -3,7 +3,9 @@ export PATH=/usr/local/bin/:$PATH
 Rscript 01_scrape.R
 
 if [[ `git status --porcelain` ]]; then
+    Rscript 02_clean.R
     # Changes
+    git add ../data_raw/*
     git add ../data/*
     git commit -m "add new data"
     git push

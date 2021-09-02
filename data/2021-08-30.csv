@@ -1,0 +1,3 @@
+date,category,tests,pos,pos_rate,cases_active,tested_total,tests_total,pos_symp_total,pos_asymp_total,pos_rate_total
+2021-08-30,employees,132,6,0.0455,5,995,6873,58,32,0.0131
+2021-08-30,students,2287,11,0.0048,7,5355,20296,55,130,0.0091
