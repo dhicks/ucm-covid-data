@@ -40,7 +40,7 @@ table = page %>%
 assert_that(all(!is.na(table)), msg = 'Testing and Positivity table not found')
 
 ## Write to disk ----
-file = file.path(data_dir, str_c(last_updated, '.csv'))
+file = file.path(data_out, str_c(last_updated, '.csv'))
 if (file.exists(file)) {
     message('Data file already exists; not writing output')
 } else {
